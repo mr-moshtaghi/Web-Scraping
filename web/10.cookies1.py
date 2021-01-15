@@ -13,8 +13,6 @@ myCookies ={
     'PHPSESSID':request_post.cookies['PHPSESSID']
 } 
 
-
-
 request_get = requests.get(url + 'secret.php' , cookies=myCookies)
 
 print(request_get.text)
