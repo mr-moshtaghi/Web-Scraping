@@ -4,7 +4,7 @@ url = 'http://www.webscrapingfordatascience.com/trickylogin/'
 
 MySession = requests.Session()
 
-# MySession.headers.update({'User-Agent':'sajjad'})
+MySession.headers.update({'User-Agent':'sajjad'})
 
 r = MySession.get(url)
 
@@ -22,4 +22,5 @@ r = MySession.post(
 
 r = MySession.get(url , params={'p':'protected'})
 
+print(r.request.headers)
 print(r.text)
