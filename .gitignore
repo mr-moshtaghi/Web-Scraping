@@ -131,3 +131,5 @@ dmypy.json
 web-scraping.pdf
 
 .vscode
+
+chromedriver.exe
