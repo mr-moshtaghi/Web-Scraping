@@ -2,7 +2,7 @@ from selenium import webdriver
 
 url = 'http://www.webscrapingfordatascience.com/complexjavascript/'
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome("/home/sajjad/Documents/Web-Scraping/web/chromedriver")
 driver.implicitly_wait(10)
 driver.get(url)
 
